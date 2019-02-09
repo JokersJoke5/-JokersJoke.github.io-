@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+</head>
+<body>
+<script>
+var A=0;
+var arr=[];
+var b=0;
+function re2(){
+  while (b <=15) {  
+  er2();
+  b++;
+  }
+
+}
+
+function er2(){
+var min=0;
+var max=1;
+  arr[A]=min + (Math.random() * ( max - min));
+A++;
+document.getElementById("inf1").innerHTML=document.getElementById("inf1").innerHTML+" Элемент"+(A-1)+ " "+arr[A-1]+"<br>";
+}
+
+
+function clean(){
+  document.getElementById("inf1").innerHTML="";
+  A=0;
+  b=0;
+}
+  
+
+</script>
+<button onclick="clean()">чисти!</button>
+
+<button onclick="re2()">11.2!</button>
+<div id ="inf2"></div>
+<div id="inf1"></div>
+<br>
+</body>
+</html>
